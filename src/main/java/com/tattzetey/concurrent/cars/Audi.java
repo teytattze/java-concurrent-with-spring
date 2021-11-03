@@ -14,7 +14,7 @@ public class Audi extends Car {
   }
 
   @Autowired
-  @Qualifier("Alex")
+  @Qualifier("alex")
   public void setDriver(Person driver) {
     this.driver = driver;
   }

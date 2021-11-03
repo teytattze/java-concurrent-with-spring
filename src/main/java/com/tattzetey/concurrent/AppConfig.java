@@ -8,13 +8,17 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "com.tattzetey.concurrent")
 public class AppConfig {
 
-  @Bean(name = "Mike")
+  @Bean(name = "mike")
   public Person mikeBean() {
-    return new Person("Mike");
+    Person person = new Person();
+    person.setName("Mike");
+    return person;
   }
 
-  @Bean(name = "Alex")
+  @Bean(name = "alex")
   public Person alexBean() {
-    return new Person("Alex");
+    Person person = new Person();
+    person.setName("Alex");
+    return person;
   }
 }
